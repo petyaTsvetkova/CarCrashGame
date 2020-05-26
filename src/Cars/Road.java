@@ -15,19 +15,22 @@ public class Road extends JPanel implements ActionListener, KeyListener {
     private int width = 50;
     private int height = 100;
     private int speed;
-    private int WIDTH = 500;
-    private int HEIGHT = 800;
+    public final static int PANEL_WIDTH = 1000;
+    public final static int PANEL_HEIGHT = 800;
     private int moveStep = 20;
     private ArrayList<Rectangle> oppositeCars;
     private Rectangle car;
     private Random random;
+    boolean gameIsActive = true;
+    GameObserver gameObserver = new GameObserver();
     Timer t;
 
     public Road() {
-        t = new Timer(20, this);
+        gameObserver.setStart(System.currentTimeMillis());
+        t = new Timer(2, this);
         random = new Random();
-        oppositeCars = new ArrayList<Rectangle>();
-        car = new Rectangle(WIDTH / 2 - 90, HEIGHT - 150, width, height);
+        oppositeCars = new ArrayList<>();
+        car = new Rectangle(PANEL_WIDTH / 2 - 90, PANEL_HEIGHT - 150, width, height);
         space = 300;
         speed = 2;
         addKeyListener(this);
@@ -38,37 +41,37 @@ public class Road extends JPanel implements ActionListener, KeyListener {
     }
 
     public void addOppositeCars(boolean hasCarAppeared) {
-        int positionX = random.nextInt() % 2;
-        int x = 0;
-        int y = 0;
-        int Width = width;
-        int Height = height;
+        int positionX = random.nextInt() % 4;
+        int x = 500;
         if (positionX == 0) {
-            x = WIDTH / 2 - 90;
-        } else {
-            x = WIDTH / 2 + 10;
+            x = PANEL_WIDTH / 2 - 150;
+        } else if (positionX == 1) {
+            x = PANEL_WIDTH / 2 - 50;
+        } else if (positionX == 2){
+            x = PANEL_WIDTH / 2 + 50;
+        } else if (positionX == 3){
+            x = PANEL_WIDTH / 2 + 150;
         }
         if (hasCarAppeared) {
-            oppositeCars.add(new Rectangle(x, y = 100 - (oppositeCars.size() * space), Width, Height));
+            oppositeCars.add(new Rectangle(x, 50 - (oppositeCars.size() * space), width, height));
         } else {
-            oppositeCars.add(new Rectangle(x, oppositeCars.get(oppositeCars.size() - 1).y - 300, Width, Height));
+            oppositeCars.add(new Rectangle(x, oppositeCars.get(oppositeCars.size() - 1).y - 400, width, height));
         }
     }
 
     public void paintComponent(Graphics g) {
         super.paintComponents(g);
         g.setColor(Color.green);
-        g.fillRect(0, 0, WIDTH, HEIGHT);
+        g.fillRect(0, 0, PANEL_WIDTH, PANEL_HEIGHT);
         g.setColor(Color.GRAY);
-        g.fillRect(WIDTH / 2 - 100, 0, 200, HEIGHT);
+        g.fillRect(PANEL_WIDTH / 2 - 200, 0, 400, PANEL_HEIGHT);
         g.setColor(Color.red);
         g.fillRect(car.x, car.y, car.width, car.height);
         g.setColor(Color.blue);
-        g.drawLine(WIDTH / 2, 0, WIDTH / 2, HEIGHT);
+        g.drawLine(PANEL_WIDTH / 2, 0, PANEL_WIDTH / 2, PANEL_HEIGHT);
         g.setColor(Color.magenta);
         for (Rectangle rect : oppositeCars)
             g.fillRect(rect.x, rect.y, rect.width, rect.height);
-
     }
 
     @Override
@@ -80,20 +83,23 @@ public class Road extends JPanel implements ActionListener, KeyListener {
         }
         for (Rectangle r : oppositeCars) {
             if (r.intersects(car)) {
-                car.y = r.y + height;
+                this.gameIsActive = false;
+                gameObserver.setFinish(System.currentTimeMillis());
             }
         }
 
         for (int i = 0; i < oppositeCars.size(); i++) {
             rect = oppositeCars.get(i);
-            if (rect.y + rect.height > HEIGHT) {
+            if (rect.y + rect.height > PANEL_HEIGHT) {
                 oppositeCars.remove(rect);
+                gameObserver.setScoreListener(gameObserver.getScoreListener() + 1);
                 addOppositeCars(false);
             }
 
         }
-        repaint();
-
+        if (gameIsActive) {
+            repaint();
+        } else gameObserver.endGameMessage();
     }
 
     public void moveUp() {
@@ -106,62 +112,47 @@ public class Road extends JPanel implements ActionListener, KeyListener {
     }
 
     public void moveDown() {
-        if (car.y + moveStep + car.height < HEIGHT - 1) {
+        if (car.y + moveStep + car.height < PANEL_HEIGHT - 1) {
             car.y += moveStep;
-            if (car.y + car.height > HEIGHT) {
-                car.y = HEIGHT - 20 - car.height;
+            if (car.y + car.height > PANEL_HEIGHT) {
+                car.y = PANEL_HEIGHT - 20 - car.height;
             }
         }
     }
 
     public void moveLeft() {
-        if (car.x - moveStep > WIDTH / 2 - 100) {
+        if (car.x - moveStep > PANEL_WIDTH / 2 - 200) {
             car.x -= moveStep;
-            if (car.x < WIDTH / 2 - 100) {
-                car.x = WIDTH / 2 - 100;
+            if (car.x < PANEL_WIDTH / 2 - 200) {
+                car.x = PANEL_WIDTH / 2 - 200;
             }
         }
     }
 
     public void moveRight() {
-        if (car.x + moveStep < WIDTH/2 + 50) {
+        if (car.x + moveStep < PANEL_WIDTH /2 + 150) {
             car.x += moveStep;
-            if (car.x > WIDTH/2 + 50) {
-                car.x = WIDTH/2 + 50;
+            if (car.x > PANEL_WIDTH /2 + 150) {
+                car.x = PANEL_WIDTH /2 + 150;
             }
         }
     }
 
     @Override
-    public void keyTyped(KeyEvent e) {
-
-    }
+    public void keyTyped(KeyEvent e) {}
 
     @Override
     public void keyPressed(KeyEvent e) {
         int key = e.getKeyCode();
-        switch (key) {
-            case KeyEvent.VK_UP:
-                moveUp();
-                break;
-            case KeyEvent.VK_DOWN:
-                moveDown();
-                break;
-            case KeyEvent.VK_LEFT:
-                moveLeft();
-                break;
-            case KeyEvent.VK_RIGHT:
-                moveRight();
-                break;
-            default:
-                break;
-        }
-
+        checkKey(key);
     }
 
     @Override
     public void keyReleased(KeyEvent e) {
         int key = e.getKeyCode();
+        checkKey(key);
+    }
+    public void checkKey (int key){
         switch (key) {
             case KeyEvent.VK_UP:
                 moveUp();

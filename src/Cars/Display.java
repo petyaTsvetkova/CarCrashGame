@@ -8,10 +8,8 @@ public class Display extends JFrame {
         Road road = new Road();
         add(road);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(500, 800);
+        setSize(Road.PANEL_WIDTH, Road.PANEL_HEIGHT);
         setVisible(true);
-
-
     }
 
 }

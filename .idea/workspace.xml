@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7487a28e-f12f-4c4f-8d93-19e7e8b79e2f" name="Default Changelist" comment="" />
+    <list default="true" id="7487a28e-f12f-4c4f-8d93-19e7e8b79e2f" name="Default Changelist" comment="local changes">
+      <change afterPath="$PROJECT_DIR$/src/Cars/GameObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CarCrashGame/Cars/Display.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CarCrashGame/Cars/Display.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CarCrashGame/Cars/Road.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CarCrashGame/Cars/Road.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CarCrashGame/META-INF/CarCrashGame.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cars/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cars/Display.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cars/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cars/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cars/Road.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cars/Road.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,32 +76,61 @@
       <option name="presentableId" value="Default" />
       <updated>1590151214643</updated>
     </task>
+    <task id="LOCAL-00001" summary="local changes">
+      <created>1590442421159</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590442421159</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="local changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="local changes" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="645" y="214" key="#com.intellij.ide.util.MemberChooser" timestamp="1590158922501">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="524" y="98" key="#com.intellij.ide.util.MemberChooser" timestamp="1590534599388">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="524" y="98" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1590534599388" />
     <state x="645" y="214" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1590158922501" />
     <state x="594" y="125" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1590152327686">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="594" y="125" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1590152327686" />
-    <state width="1637" height="272" key="GridCell.Tab.0.bottom" timestamp="1590161869089">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="312" y="0" key="CommitChangelistDialog2" timestamp="1590472523409">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="312" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590472523409" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1590535389313">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590535389313" />
     <state width="1637" height="272" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1590161869089" />
-    <state width="1637" height="272" key="GridCell.Tab.0.center" timestamp="1590161869089">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1590535389313">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590535389313" />
     <state width="1637" height="272" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1590161869089" />
-    <state width="1637" height="272" key="GridCell.Tab.0.left" timestamp="1590161869089">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1590535389313">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590535389313" />
     <state width="1637" height="272" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1590161869089" />
-    <state width="1637" height="272" key="GridCell.Tab.0.right" timestamp="1590161869089">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1590535389313">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590535389313" />
     <state width="1637" height="272" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1590161869089" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1590529371918">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1590529371918" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1590529609833">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1590529609833" />
   </component>
 </project>
