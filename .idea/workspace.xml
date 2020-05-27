@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7487a28e-f12f-4c4f-8d93-19e7e8b79e2f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CarCrashGame/Cars/Display.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CarCrashGame/Cars/Display.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CarCrashGame/Cars/Road.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CarCrashGame/Cars/Road.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cars/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cars/Display.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cars/Road.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cars/Road.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +31,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FinishTheGame" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -83,13 +87,21 @@
       <option name="project" value="LOCAL" />
       <updated>1590535486043</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="final change without the Unit tests.">
+      <created>1590536269463</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590536269464</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="local changes" />
     <MESSAGE value="Major display changes, added end game message, also changed style of the game - now it's fast-paced." />
-    <option name="LAST_COMMIT_MESSAGE" value="Major display changes, added end game message, also changed style of the game - now it's fast-paced." />
+    <MESSAGE value="final change without the Unit tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="final change without the Unit tests." />
   </component>
   <component name="WindowStateProjectService">
     <state x="524" y="98" key="#com.intellij.ide.util.MemberChooser" timestamp="1590534599388">
@@ -101,29 +113,33 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="594" y="125" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1590152327686" />
-    <state x="312" y="0" key="CommitChangelistDialog2" timestamp="1590536045817">
+    <state x="312" y="0" key="CommitChangelistDialog2" timestamp="1590536266611">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="312" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590536045817" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1590535821233">
+    <state x="312" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590536266611" />
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1590537021070">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590535821233" />
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590537021070" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1590539504919">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590539504919" />
     <state width="1637" height="272" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1590161869089" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1590535821233">
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1590539504919">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590535821233" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590539504919" />
     <state width="1637" height="272" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1590161869089" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1590535821233">
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1590539504919">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590535821233" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590539504919" />
     <state width="1637" height="272" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1590161869089" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1590535821233">
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1590539504919">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590535821233" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590539504919" />
     <state width="1637" height="272" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1590161869089" />
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1590529371918">
       <screen x="0" y="0" width="1366" height="728" />
