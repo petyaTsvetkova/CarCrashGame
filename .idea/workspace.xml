@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7487a28e-f12f-4c4f-8d93-19e7e8b79e2f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CarCrashGame/Cars/Display.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CarCrashGame/Cars/Display.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CarCrashGame/Cars/Road.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CarCrashGame/Cars/Road.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cars/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cars/Display.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cars/Road.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cars/Road.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +15,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -94,52 +93,60 @@
       <option name="project" value="LOCAL" />
       <updated>1590536269464</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added sloppy graphics. Some minor changes such as panel name. Also fixed about the car postitioning.">
+      <created>1590539753708</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1590539753708</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="local changes" />
     <MESSAGE value="Major display changes, added end game message, also changed style of the game - now it's fast-paced." />
     <MESSAGE value="final change without the Unit tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="final change without the Unit tests." />
+    <MESSAGE value="Added sloppy graphics. Some minor changes such as panel name. Also fixed about the car postitioning." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added sloppy graphics. Some minor changes such as panel name. Also fixed about the car postitioning." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="524" y="98" key="#com.intellij.ide.util.MemberChooser" timestamp="1590534599388">
+    <state x="524" y="98" key="#com.intellij.ide.util.MemberChooser" timestamp="1590540401408">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="524" y="98" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1590534599388" />
+    <state x="524" y="98" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1590540401408" />
     <state x="645" y="214" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1590158922501" />
     <state x="594" y="125" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1590152327686">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="594" y="125" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1590152327686" />
-    <state x="312" y="0" key="CommitChangelistDialog2" timestamp="1590536266611">
+    <state x="312" y="0" key="CommitChangelistDialog2" timestamp="1590539752660">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="312" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590536266611" />
+    <state x="312" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590539752660" />
     <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1590537021070">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590537021070" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1590539504919">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1590540932061">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590539504919" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590540932061" />
     <state width="1637" height="272" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1590161869089" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1590539504919">
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1590540932061">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590539504919" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590540932061" />
     <state width="1637" height="272" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1590161869089" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1590539504919">
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1590540932061">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590539504919" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590540932061" />
     <state width="1637" height="272" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1590161869089" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1590539504919">
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1590540932061">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590539504919" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590540932061" />
     <state width="1637" height="272" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1590161869089" />
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1590529371918">
       <screen x="0" y="0" width="1366" height="728" />
