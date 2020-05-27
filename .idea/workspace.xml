@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7487a28e-f12f-4c4f-8d93-19e7e8b79e2f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CarCrashGame/Cars/Road.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CarCrashGame/Cars/Road.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cars/Road.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cars/Road.java" afterDir="false" />
-    </list>
+    <list default="true" id="7487a28e-f12f-4c4f-8d93-19e7e8b79e2f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,7 +96,21 @@
       <option name="project" value="LOCAL" />
       <updated>1590539753708</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Last ones for today.">
+      <created>1590540979471</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1590540979471</updated>
+    </task>
+    <task id="LOCAL-00006" summary="I don't know why this didn't just commit. I'll try again.">
+      <created>1590541080816</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1590541080816</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -108,7 +118,9 @@
     <MESSAGE value="Major display changes, added end game message, also changed style of the game - now it's fast-paced." />
     <MESSAGE value="final change without the Unit tests." />
     <MESSAGE value="Added sloppy graphics. Some minor changes such as panel name. Also fixed about the car postitioning." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added sloppy graphics. Some minor changes such as panel name. Also fixed about the car postitioning." />
+    <MESSAGE value="Last ones for today." />
+    <MESSAGE value="I don't know why this didn't just commit. I'll try again." />
+    <option name="LAST_COMMIT_MESSAGE" value="I don't know why this didn't just commit. I'll try again." />
   </component>
   <component name="WindowStateProjectService">
     <state x="524" y="98" key="#com.intellij.ide.util.MemberChooser" timestamp="1590540401408">
@@ -120,10 +132,10 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="594" y="125" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1590152327686" />
-    <state x="312" y="0" key="CommitChangelistDialog2" timestamp="1590540978352">
+    <state x="312" y="0" key="CommitChangelistDialog2" timestamp="1590541124932">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="312" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590540978352" />
+    <state x="312" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590541124932" />
     <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1590537021070">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
