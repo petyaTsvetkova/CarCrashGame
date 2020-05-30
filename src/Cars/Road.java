@@ -93,18 +93,18 @@ public class Road extends JPanel implements ActionListener, KeyListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         Rectangle rect;
-        for (Rectangle oppositeCar : oppositeCars) {
+        for (Rectangle oppositeCar : oppositeCars) { //moving the cars
             rect = oppositeCar;
             rect.y += speed;
         }
-        for (Rectangle r : oppositeCars) {
+        for (Rectangle r : oppositeCars) { // finishing the game
             if (r.intersects(car)) {
                 this.gameIsActive = false;
                 gameObserver.setFinish(System.currentTimeMillis());
             }
         }
 
-        for (int i = 0; i < oppositeCars.size(); i++) {
+        for (int i = 0; i < oppositeCars.size(); i++) { // remove skipped opposite cars
             rect = oppositeCars.get(i);
             if (rect.y + rect.height > PANEL_HEIGHT) {
                 oppositeCars.remove(rect);
@@ -113,7 +113,7 @@ public class Road extends JPanel implements ActionListener, KeyListener {
             }
 
         }
-        if (gameIsActive) {
+        if (gameIsActive) { // final end message
             repaint();
         } else gameObserver.endGameMessage();
     }
