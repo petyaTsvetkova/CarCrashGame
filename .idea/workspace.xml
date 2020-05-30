@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7487a28e-f12f-4c4f-8d93-19e7e8b79e2f" name="Default Changelist" comment="" />
+    <list default="true" id="7487a28e-f12f-4c4f-8d93-19e7e8b79e2f" name="Default Changelist" comment="...">
+      <change afterPath="$PROJECT_DIR$/test/GameObserverTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/RoadTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarCrashGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CarCrashGame.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CarCrashGame/Cars/Road.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CarCrashGame/Cars/Road.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cars/Road.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cars/Road.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -25,16 +32,61 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FinishTheGame" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CheckedHWs/Chess" />
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Cars.Main" />
       <module name="CarCrashGame" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Cars.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameObserverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CarCrashGame" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GameObserverTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CarCrashGame" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RoadTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoadTest.testArrayListSizeIncreasesWhenAddOppositeCars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CarCrashGame" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RoadTest" />
+      <option name="METHOD_NAME" value="testArrayListSizeIncreasesWhenAddOppositeCars" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoadTest.testStopMoveUpWhenCarReachesHalfRoad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CarCrashGame" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RoadTest" />
+      <option name="METHOD_NAME" value="testStopMoveUpWhenCarReachesHalfRoad" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -42,6 +94,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.RoadTest" />
+        <item itemvalue="JUnit.GameObserverTest" />
+        <item itemvalue="JUnit.RoadTest.testArrayListSizeIncreasesWhenAddOppositeCars" />
+        <item itemvalue="JUnit.RoadTest.testStopMoveUpWhenCarReachesHalfRoad" />
       </list>
     </recent_temporary>
   </component>
@@ -110,7 +166,21 @@
       <option name="project" value="LOCAL" />
       <updated>1590541080816</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="...">
+      <created>1590541163431</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1590541163431</updated>
+    </task>
+    <task id="LOCAL-00008" summary="...">
+      <created>1590541289896</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1590541289896</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -120,50 +190,75 @@
     <MESSAGE value="Added sloppy graphics. Some minor changes such as panel name. Also fixed about the car postitioning." />
     <MESSAGE value="Last ones for today." />
     <MESSAGE value="I don't know why this didn't just commit. I'll try again." />
-    <option name="LAST_COMMIT_MESSAGE" value="I don't know why this didn't just commit. I'll try again." />
+    <MESSAGE value="..." />
+    <option name="LAST_COMMIT_MESSAGE" value="..." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="524" y="98" key="#com.intellij.ide.util.MemberChooser" timestamp="1590540401408">
+    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1590812437541">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="524" y="98" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1590540401408" />
+    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1590812437541" />
+    <state x="524" y="98" key="#com.intellij.ide.util.MemberChooser" timestamp="1590812076415">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="524" y="98" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1590812076415" />
     <state x="645" y="214" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1590158922501" />
     <state x="594" y="125" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1590152327686">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="594" y="125" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1590152327686" />
-    <state x="312" y="0" key="CommitChangelistDialog2" timestamp="1590541248168">
+    <state x="312" y="0" key="CommitChangelistDialog2" timestamp="1590819625844">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="312" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590541248168" />
-    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1590537021070">
+    <state x="312" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590819625844" />
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1590732916160">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590537021070" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1590541166234">
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590732916160" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1590819136799">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590541166234" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590819136799" />
     <state width="1637" height="272" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1590161869089" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1590541166234">
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1590819136798">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590541166234" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590819136798" />
     <state width="1637" height="272" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1590161869089" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1590541166234">
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1590819136798">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590541166234" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590819136798" />
     <state width="1637" height="272" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1590161869089" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1590541166234">
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1590819136799">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590541166234" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590819136799" />
     <state width="1637" height="272" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1590161869089" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1590812124181">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590812124181" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1590812124181">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1590812124181" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1590812124181">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1590812124181" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1590812124181">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1590812124181" />
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1590529371918">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1590529371918" />
+    <state x="387" y="258" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1590809760855">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="387" y="258" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.728@0.0.1366.728" timestamp="1590809760855" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1590529609833">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

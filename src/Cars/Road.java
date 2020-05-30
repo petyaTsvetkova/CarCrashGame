@@ -139,8 +139,8 @@ public class Road extends JPanel implements ActionListener, KeyListener {
     public void moveLeft() {
         if (car.x - moveStep > PANEL_WIDTH / 2 - 200) {
             car.x -= moveStep;
-            if (car.x < PANEL_WIDTH / 2 - 210) {
-                car.x = PANEL_WIDTH / 2 - 210;
+            if (car.x < PANEL_WIDTH / 2 - 200) {
+                car.x = PANEL_WIDTH / 2 - 200;
             }
         }
     }
