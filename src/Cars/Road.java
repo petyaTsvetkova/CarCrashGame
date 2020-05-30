@@ -118,42 +118,6 @@ public class Road extends JPanel implements ActionListener, KeyListener {
         } else gameObserver.endGameMessage();
     }
 
-    public void moveUp() {
-        if (car.y - moveStep > 0) {
-            car.y -= moveStep;
-            if (car.y < (PANEL_HEIGHT / 2 - CAR_HEIGHT / 2)) {
-                car.y = PANEL_HEIGHT / 2 - CAR_HEIGHT / 2;
-            }
-        }
-    }
-
-    public void moveDown() {
-        if (car.y + moveStep + car.height < PANEL_HEIGHT - 1) {
-            car.y += moveStep;
-            if (car.y > PANEL_HEIGHT - 2 * CAR_HEIGHT) {
-                car.y = PANEL_HEIGHT - 2 * CAR_HEIGHT;
-            }
-        }
-    }
-
-    public void moveLeft() {
-        if (car.x - moveStep > PANEL_WIDTH / 2 - 200) {
-            car.x -= moveStep;
-            if (car.x < PANEL_WIDTH / 2 - 200) {
-                car.x = PANEL_WIDTH / 2 - 200;
-            }
-        }
-    }
-
-    public void moveRight() {
-        if (car.x + moveStep < PANEL_WIDTH / 2 + 160) {
-            car.x += moveStep;
-            if (car.x > PANEL_WIDTH / 2 + 160) {
-                car.x = PANEL_WIDTH / 2 + 160;
-            }
-        }
-    }
-
     @Override
     public void keyTyped(KeyEvent e) {
     }
@@ -171,18 +135,19 @@ public class Road extends JPanel implements ActionListener, KeyListener {
     }
 
     public void checkKey(int key) {
+        Controls controls = new Controls();
         switch (key) {
             case KeyEvent.VK_UP:
-                moveUp();
+                controls.moveUp(this);
                 break;
             case KeyEvent.VK_DOWN:
-                moveDown();
+                controls.moveDown(this);
                 break;
             case KeyEvent.VK_LEFT:
-                moveLeft();
+                controls.moveLeft(this);
                 break;
             case KeyEvent.VK_RIGHT:
-                moveRight();
+                controls.moveRight(this);
                 break;
             default:
                 break;

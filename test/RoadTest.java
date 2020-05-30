@@ -1,3 +1,4 @@
+import Cars.Controls;
 import Cars.Road;
 import org.junit.Assert;
 import org.junit.Test;
@@ -20,36 +21,40 @@ public class RoadTest {
     @Test
     public void testStopMoveUpWhenCarReachesHalfRoad() {
         Road road = new Road();
+        Controls controls = new Controls();
         Rectangle myCar = road.getCar();
         myCar.y = 350; //(800 - 100) / 2
-        road.moveUp();
+        controls.moveUp(road);
         Assert.assertEquals(350, myCar.y);
     }
 
     @Test
     public void testStopMoveDownWhenCarReachesEnd() {
         Road road = new Road();
+        Controls controls = new Controls();
         Rectangle myCar = road.getCar();
         myCar.y = 700;
-        road.moveDown();
+        controls.moveUp(road);
         Assert.assertEquals(700, myCar.y);
     }
 
     @Test
     public void testStopMoveLeftWhenCarReachesLeftEnd() {
         Road road = new Road();
+        Controls controls = new Controls();
         Rectangle myCar = road.getCar();
         myCar.x = 300;
-        road.moveUp();
+        controls.moveUp(road);
         Assert.assertEquals(300, myCar.x);
     }
 
     @Test
     public void testStopMoveRightWhenCarReachesRightEnd() {
         Road road = new Road();
+        Controls controls = new Controls();
         Rectangle myCar = road.getCar();
         myCar.x = 660;
-        road.moveUp();
+        controls.moveUp(road);
         Assert.assertEquals(660, myCar.x);
     }
 
