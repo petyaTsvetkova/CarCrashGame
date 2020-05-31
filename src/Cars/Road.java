@@ -16,7 +16,6 @@ public class Road extends JPanel implements ActionListener, KeyListener {
     private int speed;
     public final static int PANEL_WIDTH = 1000;
     public final static int PANEL_HEIGHT = 800;
-    private int moveStep = 20;
     private ArrayList<Rectangle> oppositeCars;
     private Rectangle car;
 
@@ -35,7 +34,7 @@ public class Road extends JPanel implements ActionListener, KeyListener {
 
     public Road() {
         gameObserver.setStart(System.currentTimeMillis());
-        t = new Timer(2, this);
+        t = new Timer(1, this);
         random = new Random();
         oppositeCars = new ArrayList<>();
         car = new Rectangle(PANEL_WIDTH / 2 - 90, PANEL_HEIGHT - 200, CAR_WIDTH, CAR_HEIGHT);
@@ -49,7 +48,7 @@ public class Road extends JPanel implements ActionListener, KeyListener {
     }
 
     public void addOppositeCars(boolean hasCarAppeared) {
-        int positionX = random.nextInt() % 4;
+        int positionX = random.nextInt(5) % 4;
         int x = 500;
         if (positionX == 0) {
             x = PANEL_WIDTH / 2 - 150;
@@ -118,42 +117,6 @@ public class Road extends JPanel implements ActionListener, KeyListener {
         } else gameObserver.endGameMessage();
     }
 
-    public void moveUp() {
-        if (car.y - moveStep > 0) {
-            car.y -= moveStep;
-            if (car.y < (PANEL_HEIGHT / 2 - CAR_HEIGHT / 2)) {
-                car.y = PANEL_HEIGHT / 2 - CAR_HEIGHT / 2;
-            }
-        }
-    }
-
-    public void moveDown() {
-        if (car.y + moveStep + car.height < PANEL_HEIGHT - 1) {
-            car.y += moveStep;
-            if (car.y > PANEL_HEIGHT - 2 * CAR_HEIGHT) {
-                car.y = PANEL_HEIGHT - 2 * CAR_HEIGHT;
-            }
-        }
-    }
-
-    public void moveLeft() {
-        if (car.x - moveStep > PANEL_WIDTH / 2 - 200) {
-            car.x -= moveStep;
-            if (car.x < PANEL_WIDTH / 2 - 200) {
-                car.x = PANEL_WIDTH / 2 - 200;
-            }
-        }
-    }
-
-    public void moveRight() {
-        if (car.x + moveStep < PANEL_WIDTH / 2 + 160) {
-            car.x += moveStep;
-            if (car.x > PANEL_WIDTH / 2 + 160) {
-                car.x = PANEL_WIDTH / 2 + 160;
-            }
-        }
-    }
-
     @Override
     public void keyTyped(KeyEvent e) {
     }
@@ -171,18 +134,19 @@ public class Road extends JPanel implements ActionListener, KeyListener {
     }
 
     public void checkKey(int key) {
+        Controls controls = new Controls();
         switch (key) {
             case KeyEvent.VK_UP:
-                moveUp();
+                controls.moveUp(this);
                 break;
             case KeyEvent.VK_DOWN:
-                moveDown();
+                controls.moveDown(this);
                 break;
             case KeyEvent.VK_LEFT:
-                moveLeft();
+                controls.moveLeft(this);
                 break;
             case KeyEvent.VK_RIGHT:
-                moveRight();
+                controls.moveRight(this);
                 break;
             default:
                 break;
