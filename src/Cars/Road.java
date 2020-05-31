@@ -16,7 +16,6 @@ public class Road extends JPanel implements ActionListener, KeyListener {
     private int speed;
     public final static int PANEL_WIDTH = 1000;
     public final static int PANEL_HEIGHT = 800;
-    private int moveStep = 20;
     private ArrayList<Rectangle> oppositeCars;
     private Rectangle car;
 
@@ -35,7 +34,7 @@ public class Road extends JPanel implements ActionListener, KeyListener {
 
     public Road() {
         gameObserver.setStart(System.currentTimeMillis());
-        t = new Timer(2, this);
+        t = new Timer(1, this);
         random = new Random();
         oppositeCars = new ArrayList<>();
         car = new Rectangle(PANEL_WIDTH / 2 - 90, PANEL_HEIGHT - 200, CAR_WIDTH, CAR_HEIGHT);
@@ -49,7 +48,7 @@ public class Road extends JPanel implements ActionListener, KeyListener {
     }
 
     public void addOppositeCars(boolean hasCarAppeared) {
-        int positionX = random.nextInt() % 4;
+        int positionX = random.nextInt(5) % 4;
         int x = 500;
         if (positionX == 0) {
             x = PANEL_WIDTH / 2 - 150;

@@ -34,7 +34,7 @@ public class RoadTest {
         Controls controls = new Controls();
         Rectangle myCar = road.getCar();
         myCar.y = 700;
-        controls.moveUp(road);
+        controls.moveDown(road);
         Assert.assertEquals(700, myCar.y);
     }
 
@@ -60,8 +60,9 @@ public class RoadTest {
 
     @Test
     public void testRandomsWhenAddingOppositeCars() {
-        int random = new Random().nextInt();
+        int random = new Random().nextInt(4);
         int position = random % 4;
+        System.out.println(random);
         Assert.assertFalse("Invalid position.", position < 0);
     }
 
